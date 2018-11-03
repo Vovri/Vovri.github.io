@@ -7,23 +7,39 @@
 
 <h2>Character Maker</h2>
     <p>Use this segment to make fancy stuff!!!
-        <br><br><br>
-        name:<br> <input type="text" name="name" value=""><br>
-        role:<br> <input type="text" name="name" value=""><br>
-        
+        <br><br>
+        <!-- name:<br> <input type="text" name="name" value=""><br>
+        role:<br> <input type="text" name="name" value=""><br><br><br> -->
+
+    
+Name:<br>       
+<textarea id="nameInput"    rows="1"    cols="10"></textarea><br>
+Element:<br>
+<select id="elemsel">
+    <option value="Ice">Ice</option>
+    <option value="Fire">Fire</option>
+    <option value="Water">Water</option>
+    <option value="Have you pett pat potted your metie today">cakethief</option>
+</select><br>
 Description:<br>
-<textarea id="myTextarea"></textarea>
-
-
+<textarea id="DescInput" rows="10" cols= "30"></textarea>
 
 <button type="button" onclick="myFunction()">Create</button>
 
-<p id="demo"></p>
 
+    <p id="demo"></p><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><textarea id="FinalOutput">Html</textarea>
+
+
+
+    
 <script>
-function myFunction() {
-    var x = document.getElementById("myTextarea").value;
-    document.getElementById("demo").innerHTML = x;
+function myFunction() {    
+    var x = "<b>name:</b><br>" + document.getElementById("nameInput").value;
+    var z = "<br><br><b>Element:</b><br>" + document.getElementById("elemsel").value;
+    var y = "<br><br><b>Description:</b><br>" + document.getElementById("DescInput").value;
+    
+    document.getElementById("demo").innerHTML = x + z + y;
+    document.getElementById("FinalOutput").innerHTML = x + y;
 }
 </script>
 
