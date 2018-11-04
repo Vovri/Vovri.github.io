@@ -58,3 +58,13 @@ button {color: rgba(163, 106, 147, 0.7);
 a {
     color: white;
 }
+
+.box { float: left;
+    width: 200px;
+    margin-left: 10px;
+    margin-top: 10px;
+    padding: 5px;
+    border: 2px solid blue;
+}
+
+

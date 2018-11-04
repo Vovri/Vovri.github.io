@@ -8,38 +8,56 @@
 <h2>Character Maker</h2>
     <p>Use this segment to make fancy stuff!!!
         <br>
-        <!-- name:<br> <input type="text" name="name" value=""><br>
-        role:<br> <input type="text" name="name" value=""><br><br><br> -->
 
- <div id="wiggle"><br>
-Name:<br>       
-<textarea id="nameInput"    rows="1"    cols="10"></textarea><br>
-Element:<br>
+<div class="x"><button class="button" onclick="myFunction()" style="vertical-align:middle"><span>Create</span></button><button class="button" onclick="location.href='https://vovri.github.io';" style="vertical-align:middle"><span>Home</span></button></div>
+        
+ <div id="wiggle"><br>     
+<div id="Labels">Name</div><textarea id="nameInput" placeholder="Name..."   rows="1"    cols="10"></textarea>
+<div id="Labels">Title</div><textarea id="nameInput" placeholder="Title..."   rows="1"    cols="10"></textarea>    
+<br><br><div id="Labels">Element</div>
 <select id="elemsel">
+    <option value="n/a"></option>
     <option value="Ice">Ice</option>
     <option value="Fire">Fire</option>
     <option value="Water">Water</option>
     <option value="Have you pett pat potted your metie today">cakethief</option>
 </select><br>
-Description:<br>
-<textarea id="DescInput" rows="10" cols= "30"></textarea><br>
+<br>Description:<br>
+<textarea id="DescInput" rows="10" cols= "30" placeholder="Description..."></textarea><br>
 <br>
+     
+     
+     
     </div>
-    <div class="x"><button class="button" onclick="myFunction()" style="vertical-align:middle"><span>Create</span></button><button class="button" onclick="location.href='https://vovri.github.io';" style="vertical-align:middle"><span>Home</span></button></div>
+
     
 <div id="wiggle2">
         <p id="demo"></p>
     </div>
-    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><textarea id="FinalOutput">Html</textarea>
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><textarea id="FinalOutput" placeholder="Your HTML"></textarea>
 
 
 
     
 <script>
 function myFunction() {    
-    var x = "<b>name:</b><br>" + document.getElementById("nameInput").value;
-    var z = "<br><br><b>Element:</b><br>" + document.getElementById("elemsel").value;
-    var y = "<br><br><b>Description:</b><br>" + document.getElementById("DescInput").value;
+    
+    var x = "<b>name:</b><br>" + document.getElementById("nameInput").value + "<br>";
+    var z = "<b>Element:</b><br>" + document.getElementById("elemsel").value;
+    var y = "<br><b>Description:</b><br>" + document.getElementById("DescInput").value;
+    
+    var array = ['"nameInput"','"elemsel"','"DescInput"'];
+
+//    for(var i=0; i <array.length; i++){
+//        if(document.getElementById(i).value==""){
+//            i="";
+//        }
+//    }
+    
+    if(document.getElementById("nameInput").value==""){
+        x="";
+        alert("Empty name");
+    }
     
     document.getElementById("demo").innerHTML = x + z + y;
     document.getElementById("FinalOutput").innerHTML = x + y;

@@ -1,5 +1,7 @@
 body {
     background-color: rgba(255, 245, 221, 1);
+    font-size: 12px;
+    
 }
 
 h1 {
@@ -23,51 +25,89 @@ button {color: rgba(163, 106, 147, 0.7);
 input {color: rgba(163, 106, 147, 0.7);
 }
 
-select {color: rgba(163, 106, 147, 0.7);
+select {color: rgba(163, 106, 147, 0.7); border-color: rgba(255, 242, 247,0.9); background-color: rgba(255, 242, 247,0.9); border-radius: 5px; border: hidden; padding-left: 20px; height: 20px; top: 3px; background-color: rgba(255, 242, 247,0.9); position:relative; top: 1px;
+}
+
+#Labels {
+    font-family: Arial;
+    display:inline-block;
+    z-index: 1;
+    border-radius: 5px;
+    color:antiquewhite;
+    font-size: 12px;
+    line-height: 20px;
+    background-color: #e07bb7;
+    width: auto;
+    padding-left: 7px;
+    padding-right: 13px;
+    height: 21px;   
+    margin-top: -15px;
+    margin-right: -6px; 
+    margin-left: 3px; 
 }
 
 
-textarea {font-size: 12px; color: rgba(163, 106, 147, 0.7); height: 20px; border: inset; border-width: 1px; resize: none; margin: 3; padding: 3; }
 
-#DescInput {font-size: 12px; color: rgba(163, 106, 147, 0.7); border: inset; height: 100px !important; width: 500px !important; border-width: 1px; margin: 3; padding: 3; resize:both}
+textarea {
+    
+    margin-bottom: -3px;
+    font-size: 12px;
+    color: rgba(163, 106, 147, 0.7);
+    height: 20px;
+    border:inset;
+    border-width: 1px;
+    border-color: rgba(255, 242, 247,0.9);
+    background-color: rgba(255, 242, 247,0.9);
+    resize: none;
+    margin: 3;
+    padding: 3;
+    border: hidden;
+    border-radius: 5px;
+    text-indent: 10px;
+    line-height: 20px
+}
 
-#FinalOutput {font-size: 12px; color: rgba(163, 106, 147, 0.7); border: inset; min-height: 50px !important; min-width: 500px !important; border-width: 1px; margin: 3; padding: 3; display: inline-block;}
+#DescInput {font-size: 12px; color: rgba(163, 106, 147, 0.7); border: 2px solid #ccc; border-radius: 10px; height: 100px !important; width: 500px !important; border-width: 2px; text-indent: 2px !important; border-color: rgba(255, 242, 247,0.9); background-color: rgba(255, 242, 247,1); margin: 10; padding: 3; resize:both}
+
+#FinalOutput {font-size: 12px; color: rgba(163, 106, 147, 1); border: inset; min-height: 50px !important; min-width: 500px !important; border-width: 1px; margin: 3; padding: 3; display: inline-block;}
 
 #wiggle {
+    padding: 10px;
     color: rgba(163, 106, 147, 0.7);
     margin: 5px;
-    width: 28%;
+    width: 27%;
     background-color: rgba(206,92,161,0.5);
-    border-color: burlywood
     overflow:hidden;
     border-width: 1px;
-    border: solid;
-    border-radius: 15px;
+    border:hidden;
+    border-radius: 10px;
 }
 
 #wiggle2 {
     color: rgba(219, 201, 223, 0.3);
-    margin: 5px;
-    width: 28%;
-    background-color: rgba(219, 201, 223, 0.3);
+    margin: 20px;
+    width: 27%;
+    background-color: rgba(219, 201, 223, 0.0);
     border-color: burlywood
     overflow:hidden;
     border-width: 1px;
-    border: solid;
-    border-radius: 15px;
+    border: hidden;
+    border-radius: 10px;
 }
 
 div.x {text-indent: 8%}
 
 .button {
+  font-family: Arial;
   display: inline-block;
   border-radius: 4px;
   background-color: #e07bb7;
   border: none;
   color: #FFFFFF;
   text-align: center;
-  font-size: 9px;
+  font-size: 11px;
   padding: 10px;
+  line-height: 5px;
   width: 100px;
   height: 30px;
   transition: all 0.5s;
@@ -99,3 +139,4 @@ div.x {text-indent: 8%}
   opacity: 1;
   right: 0;
 }
+
