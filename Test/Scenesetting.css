@@ -74,7 +74,7 @@ header {
     position: absolute;
     background: #0f0e11;
     margin-top: 1000px;
-    height: 100%;
+    height: 30%;
     text-align:center;
 }
 
@@ -83,7 +83,7 @@ header {
     color: black;
     text-align: center;
     background: #8e7e8f;
-    margin-top: 2500px;
+    margin-top: 1700px;
     background: url('https://en.es-static.us/upl/2017/09/cassini-grand-finale-video-still-Science-Breakthrough-e1505123871529.jpg') no-repeat center;
     background-size: cover;
     background-attachment: fixed;
