@@ -68,7 +68,7 @@ header {
         }
 
 #descriptions {
-    width: auto;
+    position: center;
     margin-left: auto;
     margin-right: auto;
     position: absolute;
@@ -77,6 +77,18 @@ header {
     height: 100%;
     text-align:center;
 }
+
+#sideways {
+    text-align: center;
+    background: #8e7e8f;
+    margin-top: 2500px;
+    background: url('https://www.atrafloor.com/app/uploads/2017/01/jelly-bean-vinyl-flooring-multicolour.jpg') no-repeat center;
+    background-size: cover;
+    background-attachment: fixed;
+    height: auto;
+}
+
+
 
 nav{
     align-self:center;
