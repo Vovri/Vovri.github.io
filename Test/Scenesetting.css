@@ -13,7 +13,7 @@ html {
 }
 
 body {
-    color: #f77ed3;
+    color: #dccdda;
     margin: 0;
     padding: 0;
     perspective: 1px;
@@ -35,10 +35,12 @@ header {
 
     header h1 {
         margin-top: -100px;
+        text-shadow: 5px 5px 6px #2c242b;
     }
 
     header, header:before {
         background: 50% 50% / cover;
+        text-shadow: 1px 0px 6px #2c242b;
     }
 
         header::before {
@@ -66,10 +68,32 @@ header {
         }
 
 #descriptions {
+    width: auto;
+    margin-left: auto;
+    margin-right: auto;
     position: absolute;
     background: #0f0e11;
     margin-top: 1000px;
     height: 100%;
+    text-align:center;
+}
+
+nav{
+    align-self:center;
+
+}
+
+a:link, a:visited{
+    background-color:cadetblue;
+    color:white;
+    padding: 13px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+}
+
+a:hover,a:active {
+    background-color:cornflowerblue;
 }
 
 .scrollable {
