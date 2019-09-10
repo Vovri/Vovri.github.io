@@ -79,13 +79,16 @@ header {
 }
 
 #sideways {
+    font-family: Arial;
+    color: black;
     text-align: center;
     background: #8e7e8f;
     margin-top: 2500px;
-    background: url('https://www.atrafloor.com/app/uploads/2017/01/jelly-bean-vinyl-flooring-multicolour.jpg') no-repeat center;
+    background: url('https://en.es-static.us/upl/2017/09/cassini-grand-finale-video-still-Science-Breakthrough-e1505123871529.jpg') no-repeat center;
     background-size: cover;
     background-attachment: fixed;
-    height: auto;
+    height: 100%;
+    text-shadow: 1px 0px 10px white;
 }
 
 
