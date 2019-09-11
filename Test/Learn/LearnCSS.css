@@ -1,0 +1,132 @@
+html {
+    height: 100%;
+    overflow: hidden;
+    background: #0f0e11;
+}
+
+.container {
+    max-width: 777px; /*initial*/
+    margin: 0 auto;
+    background: #0f0e11;
+    font-size: 30px;
+    padding: initial;
+}
+
+body {
+    color: #dccdda;
+    margin: 0;
+    padding: 0;
+    perspective: 1px;
+    transform-style: preserve-3d;
+    height: 100%;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    font-family: "Arial Rounded MT";
+}
+
+header {
+    box-sizing: border-box;
+    min-height: 100vh;
+    padding: 30vw 0 5vw;
+    position: relative;
+    transform-style: inherit;
+    width: 100vw;
+}
+
+    header h1 {
+        margin-top: -100px;
+        text-shadow: 5px 5px 6px #2c242b;
+    }
+
+    header, header:before {
+        background: 50% 50% / cover;
+        text-shadow: 1px 0px 6px #2c242b;
+    }
+
+        header::before {
+            bottom: 0;
+            content: "";
+            left: 0;
+            position: absolute;
+            right: 0;
+            top: 0;
+            display: block;
+            background-image: url('https://www.sciencenewsforstudents.org/sites/default/files/scald-image/061518_LG_venus_feat.jpg');
+            background-size: cover;
+            transform-origin: center center 0;
+            transform: translateZ(-1px) scale(2);
+            z-index: -1;
+            min-height: 100vh;
+        }
+
+        header * {
+            font-weight: normal;
+            letter-spacing: 0.2em;
+            text-align: center;
+            margin: 0;
+            padding: 1em 0;
+        }
+
+#descriptions {
+    position: center;
+    margin-left: auto;
+    margin-right: auto;
+    position: absolute;
+    background: #0f0e11;
+    margin-top: 1000px;
+    height: 30%;
+    text-align:center;
+}
+
+#sideways {
+    font-family: Arial;
+    color: black;
+    text-align: center;
+    background: #8e7e8f;
+    margin-top: 1700px;
+    background: url('https://i.kinja-img.com/gawker-media/image/upload/s--ltJ-Gj4c--/c_scale,f_auto,fl_progressive,q_80,w_800/tg7yaa7ac7jxcowku0ba.jpg') no-repeat center;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 100%;
+    text-shadow: 1px 0px 10px white;
+}
+
+#nextpart {
+    font-family: Arial;
+    color: black;
+    text-align: center;
+    background: #8e7e8f;
+    margin-top: 100px;
+    background: url('https://www.nasa.gov/centers/jpl/images/content/745070main_pia14945-43.jpg') no-repeat center;
+    background-size: cover;
+    height: 100%;
+    text-shadow: 1px 0px 10px white;
+    transform-origin: center center 0;
+    transform: translateZ(-1px) scale(2);
+    z-index: -1;
+}
+
+nav{
+    align-self:center;
+
+}
+
+a:link, a:visited{
+    background-color: #c49770;
+    color:white;
+    padding: 13px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+}
+
+a:hover,a:active {
+    background-color: #b27132;
+}
+
+.scrollable {
+    background: url('https://www.nasa.gov/sites/default/files/thumbnails/image/64884main_image_feature_211_jwfull.jpg') no-repeat center;
+    background-size: cover;
+    background-attachment: fixed;
+    height: auto;
+}
