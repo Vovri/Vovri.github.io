@@ -78,10 +78,15 @@ header {
     text-align:center;
 }
 
+#fire{
+    color:#ed509d
+}
+
 #sideways {
     font-family: Arial;
-    color: black;
+    color: #edcf9f;
     text-align: center;
+    padding: 60px;
     background: #8e7e8f;
     margin-top: 1700px;
     background: url('https://i.kinja-img.com/gawker-media/image/upload/s--ltJ-Gj4c--/c_scale,f_auto,fl_progressive,q_80,w_800/tg7yaa7ac7jxcowku0ba.jpg') no-repeat center;
@@ -91,12 +96,29 @@ header {
     text-shadow: 1px 0px 10px white;
 }
 
+.button {
+    background-color: #000000;
+    border: none;
+    color: white;
+    padding: 5px 5px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+#ticktock{
+    font-size: 10px;
+}
+
 #nextpart {
     font-family: Arial;
     color: black;
     text-align: center;
     background: #8e7e8f;
-    margin-top: 100px;
+    margin-top: 10px;
     background: url('https://www.nasa.gov/centers/jpl/images/content/745070main_pia14945-43.jpg') no-repeat center;
     background-size: cover;
     height: 100%;
