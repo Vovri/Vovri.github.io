@@ -103,7 +103,7 @@ header {
     text-shadow: 1px 0px 10px white;
     transform-origin: center center 0;
     transform: translateZ(-1px) scale(2);
-    z-index: -1;
+    z-index: -1; /*interesting*/
 }
 
 nav{
