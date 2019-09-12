@@ -85,7 +85,7 @@ header {
 #sideways {
     font-family: Arial;
     color: #edcf9f;
-    text-align: center;
+    text-align: justify;
     padding: 60px;
     background: #8e7e8f;
     margin-top: 1700px;
@@ -114,11 +114,15 @@ header {
 }
 
 #nextpart {
-    font-family: Arial;
+    font-family: Arial, Helvetica, sans-serif;  /*not web safe. fix later*/
     color: black;
-    text-align: center;
+    font-size: 16px;
+    text-align: justify;
     background: #8e7e8f;
+    padding-top: 200px;
     margin-top: 10px;
+    padding-left: 500px;
+    padding-right: 500px;
     background: url('https://www.nasa.gov/centers/jpl/images/content/745070main_pia14945-43.jpg') no-repeat center;
     background-size: cover;
     height: 100%;
@@ -126,6 +130,25 @@ header {
     transform-origin: center center 0;
     transform: translateZ(-1px) scale(2);
     z-index: -1; /*interesting*/
+}
+
+.navigation {
+    display: inline-block;
+    font-size: 13px;
+    position: fixed;
+    z-index: 1; /*always ontop of content*/
+    top:0;
+    display: flex;
+    height: 60px;
+    opacity: 0.69;
+}
+
+.navigation ul {
+    display: flex;
+    align-items:center;
+    list-style: none;
+    width: 100%;
+    justify-content: center;
 }
 
 nav{
@@ -142,8 +165,24 @@ a:link, a:visited{
     display: inline-block;
 }
 
+/*Below includes placeholders*/
+highlight span {
+}
+
+highlight h2 {
+}
+
+highlight p {
+    opacity: 0.9;
+}
+/*Placeholder stop*/
+
 a:hover,a:active {
     background-color: #b27132;
+}
+
+.inactiveHyperlink {
+    pointer-events: none;
 }
 
 .scrollable {

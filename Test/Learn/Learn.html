@@ -9,38 +9,54 @@
     <script src="LearnScripts.js"></script>
     <script src="numerals.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script> <!--jquery-->
+
+    
 </head>
 <body>
+
+    <!--navbar-->
+    <nav class="navigation">
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#uppgift3">Uppgift 3</a></li>
+            <li><a href="#game">Game[Wip]</a></li>
+        </ul>
+    </nav>
+    
+
     <header>
         <h1>Javascript</h1>
-        <p>WHAT IS THIS</p>
+        <p>a little bit about my work</p>
     </header>
 
 
     <div id="descriptions">
         <nav>
-            <a href="/html/" target="_blank">Javascript</a>
-            <a href="/css/">JQuery</a>
-            <a href="/js/">Basics</a>
+            <a href="#" target="#U3" class="inactiveHyperlink">Eventuella Uppgifter</a>
+            <a href="/css/" class="inactiveHyperlink">JQuery</a>
+            <a href="/js/" class="inactiveHyperlink">Basics</a>
         </nav>
         <p>programming is fickle</p>
         <div class="form">
             <label for="guessField">1-3: </label>
-            <input type="text" id="guessField" class="guessField"/>
-            <input type="submit" value="ask" class="guessSubmit" id="submitGuess" onclick="interpret()"/>
+            <input type="text" id="guessField" class="guessField" />
+            <input type="submit" value="ask" class="guessSubmit" id="submitGuess" onclick="interpret()" />
         </div>
 
 
-        <fire>Boop!</fire>
+        <fire>[hide]</fire>
 
-        
+
     </div>
     <div id="sideways">
-        <h2>More Stuff</h2>
-        <button type="button" class="button" onmousemove="document.getElementById('ticktock').innerHTML = Date()"> 🕒 </button><button type="button" class="button" onmouseover="setBG()" onmouseout="resetBG()">☽</button>
-        <p id="ticktock"></p>
-        
-        apple
+        <center>
+            <h2>[Work In Progress Section]</h2>
+            <button type="button" class="button" onmousemove="document.getElementById('ticktock').innerHTML = Date()"> 🕒 </button><button type="button" class="button" onmouseover="setBG()" onmouseout="resetBG()">☽</button>
+            <p id="ticktock"></p>
+        </center>
+
+
         <p>
             <br>
             <br>
@@ -62,19 +78,56 @@
             <br>
             <br>
             <br>
-            wow
+
         </p>
-        <p> 
-            Jelly beans are small bean-shaped sugar candies with soft candy shells and thick gel interiors. The confection is sold in a wide variety of colors and flavors, and is made primarily of sugar.Jelly beans are small bean-shaped sugar candies with soft candy shells and thick gel interiors. The confection is sold in a wide variety of colors and flavors, and is made primarily of sugar.Jelly beans are small bean-shaped sugar candies with soft candy shells and thick gel interiors. The confection is sold in a wide variety of colors and flavors, and is made primarily of sugar.Jelly beans are small bean-shaped sugar candies with soft candy shells and thick gel interiors. The confection is sold in a wide variety of colors and flavors, and is made primarily of sugar.Jelly beans are small bean-shaped sugar candies with soft candy shells and thick gel interiors. The confection is sold in a wide variety of colors and flavors, and is made primarily of sugar.Jelly beans are small bean-shaped sugar candies with soft candy shells and thick gel interiors. The confection is sold in a wide variety of colors and flavors, and is made primarily of sugar.Jelly beans are small bean-shaped sugar candies with soft candy shells and thick gel interiors. The confection is sold in a wide variety of colors and flavors, and is made primarily of sugar.Jelly beans are small bean-shaped sugar candies with soft candy shells and thick gel interiors. The confection is sold in a wide variety of colors and flavors, and is made primarily of sugar.Jelly beans are small bean-shaped sugar candies with soft candy shells and thick gel interiors. The confection is sold in a wide variety of colors and flavors, and is made primarily of sugar.Jelly beans are small bean-shaped sugar candies with soft candy shells and thick gel interiors.
-            The confection is sold in a wide variety of colors and flavors, and is made primarily of sugar.
+        <p>
+            Here is where the game will eventually be located! This section is currently a wip and will be streamlined hopefully.
         </p>
     </div>
 
     <div id="nextpart">
-        <h2>Additional fluff</h2>
-        <p>hello</p>
+
+        <highlight>
+            <center>
+                <h2>Uppgift 3</h2>
+                <p><sup>a walkthrough</sup></p>
+            </center>
+            <span>
+
+                Uppgift 3 was my first attempt at cementing an actual game in HTML5. The goal of the question was to create a simple trivia game. Seemingly with emphasis to replayability.
+                HTML5 is a somewhat familiar language to me in  the way how it likens to Actionscript3 though with completely different syntax and setups. So in some ways, it felt both hindering and understandable to
+                pursue the gamemaking process via this.
+            </span>
+            <br /><br />
+            <span>
+                I split up all the core components of the game into its relevant css/html/js pages. (Was going to include other packages such as XML/JSON but I wasn't sure if it was allowed). The game canvas and game setup
+                was straightforwards itself, which did not cause too much problems in setting up the game.
+            </span>
+            <br /><br /> <U3></U3> <!--Uppgift 3 target for Javascript autoscroll.-->
+            <span>
+                A lot of the coding focused heavily on pixel length and proportions, which took a while to get used to since it is a relatively new concept for me. It seemed interesting how HTML5 initially had troubles loading multiple images over eachother. I tried several methods with context.drawImage(bg,0,0); and discovered that instead of overlaying. You actually
+                would need a specific array and customized image class for HTML to make sense. I took reference from the example question and decided that it's was best to use a sprite atlas instead.
+            </span>
+            <br /><br />
+            <span>
+                Afterwards I fixed the code a bit to make sure that there was no overly repeating code snippets. Optimized a little bit.
+                For example. I consolidated all items within bg.onload = function into a seperate function which can be called externally by other facets of the javascripts.
+                This allowed me to restart the game during any time the function resetAll() would be called. In order to make sure that there are no overlap or exess of drawings.
+                The resetAll() function would reset all statistics to original resting state, and it would erase all drawn artefacts within the current canvas, and redraw the scene again.
+            </span>
+            <br /><br />
+
+            <span>
+                In order to patch the game to be resettable. I had to add a second event listener for when the game was finished or 'locked'. This event listener would only be active in the duration of the final score screen.
+                After which upon the player clicking the 'refresh' button on the lower left. will call the ResetAll() function.
+            </span>
+
+        </highlight>
 
     </div>
-
+    <br /><br />
+    <br /><br />
+    <br /><br />
+    <section id="uppgift3"></section>
 </body>
 </html>
